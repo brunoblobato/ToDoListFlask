@@ -1,0 +1,113 @@
+/* 
+60 - Cores Neutras (Preto, Branco)
+30 - Cores de Branding
+10 - Cores Call to Action
+*/
+:root {
+    --bg-black: #222222;
+    --fs-white: #FAFAFA;
+    --fg-red: #A31621;
+    --fg-red-hover: #82121c;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Reset de CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Estilizando o Header */
+header {
+    color: var(--fs-white);
+    background-color: var(--bg-black);
+}
+
+header .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.wrapper form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.wrapper form button {
+    width: 50%;
+    height: 32px;
+    color: var(--fs-white);
+    background-color: var(--fg-red);
+
+    border: none;
+    border-radius: 32px;
+    transition: 0.3s;
+
+    cursor: pointer;
+}
+
+.wrapper form button:hover {
+    background-color: var(--fg-red-hover);
+}
+
+.form-container {
+    width: 50%;
+    display: flex;
+    gap: 16px;
+}
+
+.form-item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item input, .form-item textarea {
+    border: none;
+    border-radius: 8px;
+}
+
+.form-item input {
+    height: 32px;
+    padding-left: 4px;
+}
+
+.form-item textarea {
+    height: 64px;
+    padding-top: 8px;
+    padding-inline: 4px;
+
+    resize: none;
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid var(--bg-black);
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+}
+
+#message {
+    font-size: 32px;
+    color: var(--fg-red-hover);
+}
